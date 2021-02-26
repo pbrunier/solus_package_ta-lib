@@ -1,0 +1,57 @@
+<PISI>
+    <Source>
+        <Name>ta-lib</Name>
+        <Packager>
+            <Name>Patrick Brunier</Name>
+            <Email>patrick@brunier.nl</Email>
+        </Packager>
+        <License>BSD-4-Clause</License>
+        <PartOf>programming.library</PartOf>
+        <Summary xml:lang="en">TA-Lib provides common functions for the technical analysis of stock/future/commodity market data.</Summary>
+        <Description xml:lang="en">TA-Lib provides common functions for the technical analysis of stock/future/commodity market data.
+https://ta-lib.org/    
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>ta-lib</Name>
+        <Summary xml:lang="en">TA-Lib provides common functions for the technical analysis of stock/future/commodity market data.</Summary>
+        <Description xml:lang="en">TA-Lib provides common functions for the technical analysis of stock/future/commodity market data.
+https://ta-lib.org/    
+</Description>
+        <PartOf>programming.library</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/ta-lib-config</Path>
+            <Path fileType="library">/usr/lib64/libta_lib.so.0</Path>
+            <Path fileType="library">/usr/lib64/libta_lib.so.0.0.0</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>ta-lib-devel</Name>
+        <Summary xml:lang="en">Development files for ta-lib</Summary>
+        <Description xml:lang="en">TA-Lib provides common functions for the technical analysis of stock/future/commodity market data.
+https://ta-lib.org/    
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">ta-lib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/ta-lib/ta_abstract.h</Path>
+            <Path fileType="header">/usr/include/ta-lib/ta_common.h</Path>
+            <Path fileType="header">/usr/include/ta-lib/ta_defs.h</Path>
+            <Path fileType="header">/usr/include/ta-lib/ta_func.h</Path>
+            <Path fileType="header">/usr/include/ta-lib/ta_libc.h</Path>
+            <Path fileType="library">/usr/lib64/libta_lib.so</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2021-02-26</Date>
+            <Version>0.4.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Patrick Brunier</Name>
+            <Email>patrick@brunier.nl</Email>
+        </Update>
+    </History>
+</PISI>
